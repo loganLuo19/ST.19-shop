@@ -1,0 +1,23 @@
+// Required
+@import "../node_modules/bootstrap/scss/functions";
+@import "helpers/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// customization
+// 區塊
+@import "components/character";
+@import "components/todayFeature";
+@import "components/stepBar";
+@import "components/section";
+
+// 通用
+@import "components/text-setting";
+@import "components/btn-setting";
+@import "components/background";
+@import "components/utilities&else";
+
+
+
+
+
+

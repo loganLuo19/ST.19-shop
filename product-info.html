@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ST.19商場</title>
+    <link rel="shortcut icon" href="img/1598904724.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="stylesheets/all.css">
+
+</head>
+
+<body>
+    <!-- headers -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <button class="navbar-toggler border-0 mr-auto" type="button" data-toggle="collapse"
+                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="img/shopLogo.png" class="d-none d-sm-inline-block" style="height: 35px;" alt="">
+                <img src="img/shopLogo-s.png" class="d-sm-none" style="height: 25px;" alt="">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto font-weight-bold">
+                    <a class="nav-link active" href="index.html">首頁 <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="product-page.html">商品目錄</a>
+                    <a class="nav-link" href="login-page.html">登入</a>
+                </div>
+            </div>
+            <!-- 購物車內的數量 (Button 內包含 icon, 數量 badge) -->
+            <div class="dropdown ml-auto">
+                <button class="btn btn-sm btn-cart" data-toggle="dropdown" data-flip="false">
+                    <i class="fas fa-shopping-cart text-primary fa-2x d-none d-sm-inline-block"></i>
+                    <i class="fas fa-shopping-cart text-primary d-sm-none"></i>
+                    <span class="badge badge-pill badge-danger">2</span>
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" style="min-width:300px">
+                    <div class="px-4 py-3">
+                        <h6>已選擇商品</h6>
+                        <table class="table table-sm">
+                            <tbody>
+                                <tr>
+                                    <td class="align-middle text-center">
+                                        <a href="#removeModal" class="text-muted d-block btn-icon" data-toggle="modal">
+                                            <i class="far fa-trash-alt"></i>
+                                        </a>
+                                    </td>
+                                    <td class="align-middle">北歐城市掛畫</td>
+                                    <td class="align-middle">2</td>
+                                    <td class="align-middle text-right">$890</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="shoppingCart.html" class="btn btn-primary btn-block btn-sm">查看購物車</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="removeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="exampleModalLabel">刪除訂單</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    是否確認刪除訂單?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-outline-danger">確定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main -->
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb bg-transparent">
+                <li class="breadcrumb-item"><a href="#">首頁</a></li>
+                <li class="breadcrumb-item"><a href="#">新品上市</a></li>
+                <li class="breadcrumb-item active" aria-current="page">北歐城市掛畫</li>
+            </ol>
+        </nav>
+        <div class="row">
+            <div class="col-md-4 mt-3">
+                <div class="sticky-top" style="top: 10px;">
+                    <h2 class="h3">北歐城市掛畫</h2>
+                    <div class="d-flex justify-content-end align-items-end">
+                        <span class="text-muted"><s>售價: $990 元</s></span>
+                        <span class="h3 ml-auto mb-0 text-danger"><small>特價:</small><strong> $890 元</strong></span>
+                    </div>
+                    <hr>
+                    尺寸:
+                    <div class="btn-group btn-group-toggle btn-group-sm m-1" data-toggle="buttons">
+                        <label class="btn btn-outline-primary active">
+                            <input type="radio" name="options" id="option1" checked>大
+                        </label>
+                        <label class="btn btn-outline-primary">
+                            <input type="radio" name="options" id="option2">中
+                        </label>
+                        <label class="btn btn-outline-primary">
+                            <input type="radio" name="options" id="option3">小
+                        </label>
+                        <label class="btn btn-outline-primary disabled">
+                            <input type="radio" name="options" id="option3" disabled>特小
+                        </label>
+                    </div>
+                    <br>
+                    <form class="my-3">
+                        <div class="form-group d-flex">
+                            <label for="type" style="min-width: 35.69px;">樣式: </label>
+                            <select class="form-control border-primary form-control-sm ml-2" style="max-width: 200px;"
+                                id="type">
+                                <option selected disabled>--請選擇樣式--</option>
+                                <option>赫爾辛基款</option>
+                                <option>約恩蘇款</option>
+                                <option>赫爾辛基-教堂款</option>
+                            </select>
+                        </div>
+                    </form>
+                    <div class="input-group my-4">
+                        <select name="" id="" class="form-control mr-1 border-primary form-control-sm rounded">
+                            <option value="1">1 件</option>
+                            <option value="2">2 件</option>
+                            <option value="3">3 件</option>
+                        </select>
+                        <a href="#" class="btn btn-primary btn-sm">
+                            <i class="fas fa-cart-plus"></i>
+                            加入購物車
+                        </a>
+                    </div>
+                    <hr>
+                </div>
+
+            </div>
+            <div class="col-md-8 mt-3">
+                <h2 class="font-weight-bold">北歐城市掛畫</h2>
+                <p>來自芬蘭知名藝術插畫家 ── 拉希沃，將芬蘭知名景點收入畫框。鮮明色彩搭上百搭背景，適合房間的任何一隅。提供多個尺寸、樣式選擇。</p>
+                <div class="text-center mt-4">
+                    <h3 class="my-3">芬蘭首都<small class="text-info ml-3">赫爾辛基款</small></h3>
+                    <img src="https://images.unsplash.com/photo-1592990379276-f15152f278e3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1900&q=80"
+                        class="img-fluid" alt="Responsive image">
+                    <img src="https://images.unsplash.com/photo-1592990379164-2826ed0a6799?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80"
+                        class="img-fluid mt-3" alt="Responsive image">
+
+                    <h3 class="mt-5 mb-3">知名城市<small class="text-info ml-3">約恩蘇款</small></h3>
+                    <img src="https://images.unsplash.com/photo-1592990379451-8e4ca4a08d78?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80"
+                        class="img-fluid" alt="Responsive image">
+
+                    <h3 class="mt-5 mb-3">典雅教堂<small class="text-info ml-3">赫爾辛基教堂款</small></h3>
+                    <img src="https://images.unsplash.com/photo-1592990379316-3eb202b52ee9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80"
+                        class="img-fluid" alt="Responsive image">
+                    <h5 class="mt-5 mb-3 text-info">各種款式</h5>
+                    <img src="https://images.unsplash.com/photo-1592990379324-45b15250bd99?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDAxNX0&auto=format&fit=crop&w=700&q=80"
+                        class="img-fluid" alt="Responsive image">
+                    <div class="card bg-light my-4">
+                        <div class="card-header h4">購買說明</div>
+                        <div class="card-body">
+                            <p class="card-text text-left">Some quick example text to build on the card title and make
+                                up the bulk of the card's content.Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Provident, voluptates! </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="bg-soft py-2 mt-4 text-muted">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <img src="img/logo2.png" class="img-fluid" style="max-width: 200px;" alt="Responsive image">
+                    </div>
+
+                </div>
+                <div class="col-md-8">
+                    <h4 class="display-4 py-3 text-primary d-none d-md-inline-block">安心購物 | 舒適生活</h4>
+                    <ul class="list-unstyled text-center text-md-left">
+                        <li>服務專線:04-1234-5678</li>
+                        <li>st.19shop@email.com</li>
+                        <li>台中市西區成功路</li>
+                    </ul>
+                    <ul class="list-inline text-center text-md-right">
+                        <li class="list-inline-item">
+                            <a class="text-info" href="#">
+                                <i class="fab fa-instagram"></i> Instagrame</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-info" href="#">
+                                <i class="fab fa-facebook-square pr-1"></i>Facebook
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-info" href="#">About</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <p class="text-center">© Copyright 2020 ST.19商場 <small> Made with Bootstrap4</small></p>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="js/all.js"></script>
+
+</body>
+
+</html>
